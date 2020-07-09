@@ -1,0 +1,152 @@
+body {
+  background-color: #0f121f;
+  background-image: url(../../media/stars.png);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+body * {
+  font-family: Ubuntu;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  margin: 0;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    margin: 100px auto;
+    font-size: 2.4em;
+  }
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+}
+
+nav {
+  justify-self: end;
+
+  li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  button {
+    background: none;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+  }
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.article {
+  padding: 10px;
+  border: 1px solid #00dba0;
+  position: relative;
+  padding-bottom: 40px;
+
+  h2 {
+    font-size: 1.2em;
+  }
+  .author {
+    padding: 10px;
+    background: #00dba0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    color: #0f121f;
+  }
+}
+
+.article-detail .article {
+  padding: 0;
+
+  img {
+    max-width: 100%;
+  }
+  h2 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em;
+  }
+  p {
+    text-align: center;
+
+    padding: 15px;
+  }
+}
+
+.site-form {
+  margin-top: 60px;
+  border: 1px solid #00dba0;
+  padding: 20px;
+
+  & input,
+  & textarea {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+  }
+  & input[type="submit"] {
+    background: #00dba0;
+    border: 0;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+}
+
+a.highlight {
+  border: 1px solid #00dba0;
+  padding: 10px;
+  border-radius: 4px;
+  color: #00dba0;
+}
+
+.helptext,
+.helptext ul {
+  margin: 0 auto 20px;
+  color: #bbb;
+  font-size: 0.9em;
+  display: block;
+}
+
+.errorlist {
+  padding: 0;
+
+  li {
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #ff5722;
+    color: #ff5722;
+    margin: 10px 0;
+  }
+}
